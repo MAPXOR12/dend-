@@ -32,15 +32,15 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
 
 const arwEmbed = new Discord.MessageEmbed()
 .setColor("RANDOM")
-.setDescription(`**Kayıt Başarılı <a:tik:846740308308787211>**
+.setDescription(`**Kayıt Başarılı <a:bonay2:847186647589060649>**
 
-<a:elms:846824635375157289> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
+<a:elms:847189533644685324> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
  
-<a:elms:846824635375157289> **Kullanıcının Yaşı :** : \`${yazilacakIsim}\`
+<a:elms:847189533644685324> **Kullanıcının Yaşı :** : \`${yazilacakIsim}\`
 
-<a:elms:846824635375157289> **Verilen Roller:** <@&${ayar.erkekRolleri}>
+<a:elms:847189533644685324> **Verilen Roller:** <@&${ayar.erkekRolleri}>
 
-<a:elms:846824635375157289> **Yetkili :** ${message.author}`)
+<a:elms:847189533644685324> **Yetkili :** ${message.author}`)
 
 .setFooter('Lzoyn Was Here')
 .setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true}))

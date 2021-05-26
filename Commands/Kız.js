@@ -1,4 +1,5 @@
 const { MessageEmbed } = require("discord.js");
+const Discord = require("discord.js")
 const qdb = require("quick.db");
 const db = new qdb.table("ayarlar");
 const kdb = new qdb.table("kullanici");
@@ -26,6 +27,26 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
       await uye.roles.set(ayar.kizRolleri || []).catch();
     uye.setNickname(`${yazilacakIsim}`).catch();
     if(ayar.tag && uye.user.username.includes(ayar.tag)) uye.roles.add(ayar.ekipRolu).catch();
+
+const arwEmbed = new Discord.MessageEmbed()
+.setColor("RANDOM")
+.setDescription(`**Kayıt Başarılı <a:bonay2:847186647589060649>**
+
+<a:elms:847189533644685324> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
+ 
+<a:elms:847189533644685324> **Kullanıcının Yaşı :** : \`${yazilacakIsim}\`
+
+<a:elms:847189533644685324> **Verilen Roller:** <@&${ayar.kizRolleri}>
+
+<a:elms:847189533644685324> **Yetkili :** ${message.author}`)
+
+.setFooter('Lzoyn Was Here')
+.setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true}))
+.setImage("https://media.discordapp.net/attachments/608711485849337856/846657241984663572/a_4773a01940005ed3b45a0ed6ff6c9540.gif")    
+.setTimestamp()
+
+message.channel.send(arwEmbed)
+
 };
 module.exports.configuration = {
   name: "kız",

@@ -62,10 +62,10 @@ client.emojiSayi = function(sayi) {
 };
 
 client.emojiler = {
-  onay: "583110927034089473",
-  iptal: "583110878891868180",
-  cevrimici: "719668543318130689",
-  rahatsizetmeyin: "719668434811486208",
+  onay: "847186647589060649 ",
+  iptal: "847186648554537060 ",
+  cevrimici: "847186652890923008 ",
+  rahatsizetmeyin: "847186649686212639 ",
   bosta: "719668583243972718",
   gorunmez: "719668505846349864",
   erkekEmoji: "719668058129432607",
@@ -226,4 +226,4 @@ Array.prototype.temizle = function() {
 };
 
 
-client.login('ODA3OTgzMzg2NDk2MjA0ODIy.YB_7Kg.CLrttZKdzOndPCGFp8_sntNzXLk')
+client.login('ODA3OTgzMzg2NDk2MjA0ODIy.YB_7Kg.87JRUp8TSapriUr-AIN6WjwbKoM')
