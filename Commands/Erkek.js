@@ -1,4 +1,5 @@
 const { MessageEmbed } = require("discord.js");
+const Discord = require("discord.js")
 const qdb = require("quick.db");
 const db = new qdb.table("ayarlar");
 const kdb = new qdb.table("kullanici");
@@ -29,7 +30,25 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
 
 //_---------------------
 
-  const etiketlenenKişi = message.mentions.members.first() || message.guild.members.cache.get(args[0])
+const arwEmbed = new Discord.MessageEmbed()
+.setColor("RANDOM")
+.setDescription(`**Kayıt Başarılı <a:tik:846740308308787211>**
+
+<a:elms:846824635375157289> **Kullanıcının İsmi :**  \`${ayar.tag} ${yazilacakIsim} \` 
+ 
+<a:elms:846824635375157289> **Kullanıcının Yaşı :** : \`${yazilacakIsim}\`
+
+<a:elms:846824635375157289> **Verilen Roller:** <@&${ayar.erkekRolleri}>
+
+<a:elms:846824635375157289> **Yetkili :** ${message.author}`)
+
+.setFooter('Lzoyn Was Here')
+.setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true}))
+.setImage("https://media.discordapp.net/attachments/608711485849337856/846657241984663572/a_4773a01940005ed3b45a0ed6ff6c9540.gif")    
+.setTimestamp()
+
+message.channel.send(arwEmbed)
+
 
 };
 module.exports.configuration = {

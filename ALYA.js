@@ -225,4 +225,5 @@ Array.prototype.temizle = function() {
   return yeni;
 };
 
-client.login(conf.token).then(console.log("Bot başarılı bir şekilde giriş yaptı.")).catch(err => console.error("Bot giriş yapamadı | Hata: " + err));
+
+client.login('ODA3OTgzMzg2NDk2MjA0ODIy.YB_7Kg.CLrttZKdzOndPCGFp8_sntNzXLk')
