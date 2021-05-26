@@ -4,7 +4,7 @@ const qdb =require("quick.db");
 const db = new qdb.table("ayarlar");
 
 module.exports.execute = async (client, message, args, ayar, emoji) => {
-  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("YASHINU ❤️ ALOSHA").setColor(client.randomColor()).setTimestamp();
+  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("Lzoyn ❤️").setColor(client.randomColor()).setTimestamp();
   let command = args[0]
 	if (global.commands.has(command)) {
 		command = global.commands.get(command)

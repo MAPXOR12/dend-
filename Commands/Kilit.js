@@ -1,7 +1,7 @@
 ﻿const { MessageEmbed } = require("discord.js");
 
 module.exports.execute = async(client, message, args, ayar, emoji) => {
-  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("YASHINU ❤️ ALOSHA").setColor(client.randomColor()).setTimestamp();
+  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("Lzoyn ❤️").setColor(client.randomColor()).setTimestamp();
   if(!message.member.roles.cache.has(ayar.sahipRolu)) return message.channel.send(embed.setDescription("Bu komutu kullanabilmek için gerekli rollere sahip değilsin!")).then(x => x.delete({timeout: 5000}));
   let everyone = message.guild.roles.cache.find(a => a.name === "@everyone");
   let permObjesi = {};

@@ -58,7 +58,7 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
     }
     let sır = Object.keys(data);
     let sıralama = sır.sort((a, b) => (getLevelExp(data[b].Level) + data[b].XP) - (getLevelExp(data[a].Level) + data[a].XP)).indexOf(user.id) + 1;
-    let embed = new MessageEmbed().setThumbnail(user.user.avatarURL({dynamic: true, size: 2048})).setAuthor(user.displayName, user.user.avatarURL({dynamic: true, size: 2048})).setFooter("YASHINU ❤️ ALOSHA").setColor(client.randomColor()).setTimestamp();
+    let embed = new MessageEmbed().setThumbnail(user.user.avatarURL({dynamic: true, size: 2048})).setAuthor(user.displayName, user.user.avatarURL({dynamic: true, size: 2048})).setFooter("Lzoyn ❤️").setColor(client.randomColor()).setTimestamp();
     message.channel.send(embed
       .setDescription(`🔷 ${udata.Level} seviye, ${udata.XP} tecrübe puanın var.`)
       .addField("Sıralama", `🔶 ${sıralama}/${sır.length}`, true)

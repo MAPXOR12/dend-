@@ -3,7 +3,7 @@ const qdb = require("quick.db");
 const db = new qdb.table("ayarlar");
 
 module.exports.execute = async (client, message, args, ayar, emoji) => {
-  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("YASHINU ❤️ ALOSHA").setColor(client.randomColor()).setTimestamp();
+  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("Lzoyn ❤️").setColor(client.randomColor()).setTimestamp();
   if(!ayar.teyitciRolleri) return message.channel.send("**Roller ayarlanmamış!**").then(x => x.delete({timeout: 5000}));
   if(!ayar.teyitciRolleri.some(rol => message.member.roles.cache.has(rol)) && !message.member.roles.cache.has(ayar.sahipRolu)) return message.channel.send(embed.setDescription(`İsim komutunu kullanabilmek için herhangi bir yetkiye sahip değilsin.`)).then(x => x.delete({timeout: 5000}));
   let uye = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
@@ -22,7 +22,7 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
     yazilacakIsim = `${uye.user.username.includes(ayar.tag) ? ayar.tag : (ayar.ikinciTag ? ayar.ikinciTag : (ayar.tag || ""))} ${isim}`;
   };
   uye.setNickname(`${yazilacakIsim}`).catch();
-  message.channel.send(new MessageEmbed().setColor(client.randomColor()).setTitle("Kayıt Sistemi").setThumbnail(uye.user.avatarURL({dynamic: true, size: 2048})).setFooter("YASHINU ❤️ ALOSHA").setTimestamp().setDescription(`${emoji("gif1")} Kayıt Olan Kullanıcı: ${uye}\n${emoji("gif1")} Verilen Roller: ${uye.roles.cache.filter(a => a.name !== "@everyone").map(x => x).join(', ')}\n${emoji("gif1")} Kayıt Eden: ${message.author}\n${emoji("gif1")} Güncellenen İsim: \`${yazilacakIsim}\``)).catch();
+  message.channel.send(new MessageEmbed().setColor(client.randomColor()).setTitle("Kayıt Sistemi").setThumbnail(uye.user.avatarURL({dynamic: true, size: 2048})).setFooter("Lzoyn ❤️").setTimestamp().setDescription(`${emoji("gif1")} Kayıt Olan Kullanıcı: ${uye}\n${emoji("gif1")} Verilen Roller: ${uye.roles.cache.filter(a => a.name !== "@everyone").map(x => x).join(', ')}\n${emoji("gif1")} Kayıt Eden: ${message.author}\n${emoji("gif1")} Güncellenen İsim: \`${yazilacakIsim}\``)).catch();
 };
 module.exports.configuration = {
   name: "isim",

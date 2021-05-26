@@ -43,7 +43,7 @@ module.exports.execute = async (client, message, args) => {
     { name: "jailLogKanali", type: "kanal" }
   ];
   let secim = args[0];
-  const embed = new MessageEmbed().setColor(client.randomColor()).setAuthor(message.member.displayName, message.author.avatarURL({ dynamic: true })).setFooter("YASHINU ❤️ ALOSHA");
+  const embed = new MessageEmbed().setColor(client.randomColor()).setAuthor(message.member.displayName, message.author.avatarURL({ dynamic: true })).setFooter("Lzoyn ❤️");
   if (secim == "liste") {
     let data = await db.get("ayar");
     let ozelliklerListe = Object.keys(data || {}).filter(a => ozellikler.find(v => v.name == a)).map(o => {

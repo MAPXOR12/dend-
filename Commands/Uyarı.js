@@ -5,7 +5,7 @@ const db = new qdb.table("ayarlar");
 const kdb = new qdb.table("kullanici");
 
 module.exports.execute = async (client, message, args, ayar, emoji) => {
-  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("YASHINU ❤️ ALOSHA").setColor(client.randomColor()).setTimestamp();
+  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("Lzoyn ❤️").setColor(client.randomColor()).setTimestamp();
   if(!ayar.enAltYetkiliRolu) return message.channel.send("**Roller ayarlanmamış!**").then(x => x.delete({timeout: 5000}));
   if(message.member.roles.highest.position < message.guild.roles.cache.get(ayar.enAltYetkiliRolu).position && !message.member.roles.cache.has(ayar.sahipRolu)) return message.channel.send(embed.setDescription(`Uyarı komutunu kullanabilmek için herhangi bir yetkiye sahip değilsin.`)).then(x => x.delete({timeout: 5000}));
   let uye = message.mentions.members.first() || message.guild.members.cache.get(args[0]);

@@ -4,7 +4,7 @@ const db = new qdb.table("ayarlar");
 const kdb = new qdb.table("kullanici");
 
 module.exports.execute = async(client, message, args, ayar, emoji) => {
-  let embed = new MessageEmbed().setAuthor(message.guild.name, message.guild.iconURL({dynamic: true})).setThumbnail(message.guild.iconURL({dynamic: true})).setFooter("YASHINU ❤️ ALOSHA").setColor("RANDOM").setTimestamp();
+  let embed = new MessageEmbed().setAuthor(message.guild.name, message.guild.iconURL({dynamic: true})).setThumbnail(message.guild.iconURL({dynamic: true})).setFooter("Lzoyn ❤️").setColor("RANDOM").setTimestamp();
   if(ayar.embedImage) embed.setImage(ayar.embedImage);
   let data = await kdb.get("teyit") || {};
   let arr = Object.keys(data);

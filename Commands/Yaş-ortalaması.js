@@ -3,7 +3,7 @@ const qdb = require("quick.db");
 const db = new qdb.table("ayarlar");
 
 module.exports.execute = async(client, message, args, ayar, emoji) => {
-  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("YASHINU ❤️ ALOSHA").setColor(client.randomColor()).setTimestamp();
+  let embed = new MessageEmbed().setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true})).setFooter("Lzoyn ❤️").setColor(client.randomColor()).setTimestamp();
   if (!db.get(`ayar.isim-yas`)) return message.channel.send(embed.setDescription("Bu komutun kullanılabilmesi için sunucuda isim-yaş sistemi açık olmalıdır!")).then(x => x.delete({timeout: 5000}));;
   if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(embed.setDescription("Bu komutu kullanabilmek için **Yönetici** iznine sahip olmalısın!")).then(x => x.delete({timeout: 5000}));
   function ortalama(array) {
