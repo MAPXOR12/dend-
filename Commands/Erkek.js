@@ -26,6 +26,11 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
       await uye.roles.set(ayar.erkekRolleri || []).catch();
     uye.setNickname(`${yazilacakIsim}`).catch();
     if(ayar.tag && uye.user.username.includes(ayar.tag)) uye.roles.add(ayar.ekipRolu).catch();
+
+//_---------------------
+
+  const etiketlenenKişi = message.mentions.members.first() || message.guild.members.cache.get(args[0])
+
 };
 module.exports.configuration = {
   name: "erkek",
