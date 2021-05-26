@@ -34,7 +34,7 @@ const arwEmbed = new Discord.MessageEmbed()
 .setColor("RANDOM")
 .setDescription(`**Kayıt Başarılı <a:tik:846740308308787211>**
 
-<a:elms:846824635375157289> **Kullanıcının İsmi :**  \`${ayar.tag} ${yazilacakIsim} \` 
+<a:elms:846824635375157289> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
  
 <a:elms:846824635375157289> **Kullanıcının Yaşı :** : \`${yazilacakIsim}\`
 
