@@ -48,6 +48,8 @@ const arwEmbed = new Discord.MessageEmbed()
 .setTimestamp()
 
 message.channel.send(arwEmbed)
+message.guild.channels.cache.get("847053860040474633").send(` ${member} Aramıza Katılan Bİr Yakışıklı Var. Hoşgeldin <a:byuvarlanma:847186670536491078>`)
+
 
 
 };

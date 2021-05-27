@@ -36,13 +36,13 @@ const arwEmbed = new Discord.MessageEmbed()
  
 <a:elms:847189533644685324> **Kullanıcının Cinsiyeti :** : \`Kadın\`
 
-<a:elms:847189533644685324> **Verilen Roller:** <@&${ayar.kizRolleri}>
+<a:elms:847189533644685324> **Verilen Roller:** <@&847053859629301765>
 
 <a:elms:847189533644685324> **Yetkili :** ${message.author}`)
 
 .setFooter('Lzoyn Was Here')
 .setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true}))
-.setImage("https://media.discordapp.net/attachments/608711485849337856/846657241984663572/a_4773a01940005ed3b45a0ed6ff6c9540.gif")    
+.setImage("https://media.discordapp.net/attachments/608711473652563968/834012334309376030/image0.gif")    
 .setTimestamp()
 
 message.channel.send(arwEmbed)

@@ -3,6 +3,7 @@ const qdb = require("quick.db");
 const jdb = new qdb.table("cezalar");
 const db = new qdb.table("ayarlar");
 
+
 module.exports = async (member) => {
   let client = global.client;
   let ayarlar = db.get("ayar") || {};
@@ -12,6 +13,8 @@ module.exports = async (member) => {
   let tempmute = jdb.get("tempmute") || [{id: null}];
   let seslimute = jdb.get("tempsmute") || [{id: null}];
   let yasakTaglilar = jdb.get("yasakTaglilar") || [];
+
+
   let guvenilirlik = Date.now()-member.user.createdTimestamp < 1000*60*60*24*7;
   if (ayarlar.yasakTaglar && !ayarlar.yasakTaglar.some(tag => member.user.username.includes(tag)) && yasakTaglilar.some(x => x.includes(member.id))) await jdb.set('yasakTaglilar', yasakTaglilar.filter(x => !x.includes(member.id)));
   if(jaildekiler.some(x => x.includes(member.id)) || tempjaildekiler.some(x => x.id === member.id)){
