@@ -43,7 +43,7 @@ module.exports = async (member) => {
 
   **${client.emoji("gif4")} • Hesap ${guvenilirlik ? "Tehlikeli!" : "Güvenli!"}**
   `)
-.setImage(member.avatarURL)
+
 member.guild.channels.cache.get(ayarlar.teyitKanali).send(`<@&847053859645030440> **${member} Katıldı Ona Yardımcı olun**`)
   if(ayarlar.ikinciTag) member.setNickname(`${ayarlar.ikinciTag} ${member.displayName}`).catch();
   else if(ayarlar.tag) member.setNickname(`${ayarlar.tag} ${member.displayName}`).catch();
