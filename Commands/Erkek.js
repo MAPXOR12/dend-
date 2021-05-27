@@ -36,9 +36,9 @@ const arwEmbed = new Discord.MessageEmbed()
 
 <a:elms:847189533644685324> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
  
-<a:elms:847189533644685324> **Kullanıcının Yaşı :** : \`${yazilacakIsim}\`
+<a:elms:847189533644685324> **Kullanıcının Cinsiyeti :** : \`Erkek\`
 
-<a:elms:847189533644685324> **Verilen Roller:** <@&${ayar.erkekRolleri}>
+<a:elms:847189533644685324> **Verilen Roller:**  <@&847053859629301764>
 
 <a:elms:847189533644685324> **Yetkili :** ${message.author}`)
 
