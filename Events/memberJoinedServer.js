@@ -27,13 +27,20 @@ module.exports = async (member) => {
   if(tempmute.some(x => x.id === member.id) || muteliler.some(x => x.includes(member.id))) member.roles.add(ayarlar.muteRolu).catch();
   if(seslimute.some(x => x.id === member.id) && member.voice.channel) member.voice.setMute(true).catch();
   let embed = new MessageEmbed().setColor(member.client.randomColor())
-.setTitle(``)  
-.setDescription(`${client.emoji("gif1")} ${member} **Sunucumuza Hoşgeldin**
+.setTitle(`${client.emoji("gif1")} ${member} **Sunucumuza Hoşgeldin**`)  
+
+.setDescription(`
   **${client.emoji("gif1")} • Seninle \`${member.guild.memberCount}\` kişiyiz!**
-  **${client.emoji("gif2")} • Ses kanalına girerek kayıt olabilirsin.**
+
+  **${client.emoji("gif2")} • Marıen Registery kanalına girerek kayıt olabilirsin.**
+
+**${client.emoji("gif4")} • Sunucuya giren herkes #kurallar kanalındaki kuralları okumuş sayılacaktır!**
+
   **${client.emoji("gif3")} • Hesabın Açılış Süresi: ${member.client.tarihHesapla(member.user.createdAt)}**
+
   **${client.emoji("gif4")} • Hesap ${guvenilirlik ? "Tehlikeli!" : "Güvenli!"}**
-  `);
+  `)
+.setImage('https://tenor.com/view/welcome-gif-10939070')
   if(ayarlar.ikinciTag) member.setNickname(`${ayarlar.ikinciTag} ${member.displayName}`).catch();
   else if(ayarlar.tag) member.setNickname(`${ayarlar.tag} ${member.displayName}`).catch();
   if (ayarlar.embedImage) embed.setImage(ayarlar.embedImage);
