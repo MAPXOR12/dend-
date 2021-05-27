@@ -4,6 +4,8 @@ const jdb = new qdb.table("cezalar");
 const db = new qdb.table("ayarlar");
 
 
+
+
 module.exports = async (member) => {
   let client = global.client;
   let ayarlar = db.get("ayar") || {};
@@ -12,7 +14,10 @@ module.exports = async (member) => {
   let muteliler = jdb.get("mute") || [];
   let tempmute = jdb.get("tempmute") || [{id: null}];
   let seslimute = jdb.get("tempsmute") || [{id: null}];
+const moment = require('moment')
   let yasakTaglilar = jdb.get("yasakTaglilar") || [];
+const guild = client.guilds.cache.get("847053859590504478");
+    
 
 
   let guvenilirlik = Date.now()-member.user.createdTimestamp < 1000*60*60*24*7;
@@ -33,11 +38,20 @@ module.exports = async (member) => {
 
 if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).send(`
 
-dsadas
+**${member} Sunucumuza Hoşgeldin**
+
+ Seninle beraber \`${guild.memberCount}\` kişiyiz.
+
+Kayıt Olmak İçin #rules Kanalına Göz Attıktan Sonra \`Marıen Registery\` Kanalına Girebilirsin.
+
+Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş.
+
+**<@&847053859645030440>**
+
 `)
 
 
-member.guild.channels.cache.get(ayarlar.teyitKanali).send(`<@&847053859645030440> **${member} Katıldı Ona Yardımcı olun**`)
+
   if(ayarlar.ikinciTag) member.setNickname(`${ayarlar.ikinciTag} ${member.displayName}`).catch();
   else if(ayarlar.tag) member.setNickname(`${ayarlar.tag} ${member.displayName}`).catch();
   if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).send
