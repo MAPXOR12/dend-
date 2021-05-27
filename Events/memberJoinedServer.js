@@ -38,15 +38,15 @@ const guild = client.guilds.cache.get("847053859590504478");
 
 if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).send(`
 
-**${member} Sunucumuza Hoşgeldin**
+<a:elms:847189533644685324> **${member}  Sunucumuza Hoşgeldin**
 
- Seninle beraber \`${guild.memberCount}\` kişiyiz.
+<a:elms:847189533644685324> Seninle beraber \`${guild.memberCount}\` kişiyiz.
 
-Kayıt Olmak İçin #rules Kanalına Göz Attıktan Sonra \`Marıen Registery\` Kanalına Girebilirsin.
+<a:elms:847189533644685324>  Kayıt Olmak İçin #rules Kanalına Göz Attıktan Sonra \`Marıen Registery\` Kanalına Girebilirsin.
 
-Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş.
+<a:elms:847189533644685324>  Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş. <a:bonay2:847186647589060649>
 
-**<@&847053859645030440>**
+<a:balev:847186649268092929> **<@&847053859645030440>**
 
 `)
 
