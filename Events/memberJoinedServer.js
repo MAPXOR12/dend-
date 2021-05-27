@@ -27,7 +27,8 @@ module.exports = async (member) => {
   if(tempmute.some(x => x.id === member.id) || muteliler.some(x => x.includes(member.id))) member.roles.add(ayarlar.muteRolu).catch();
   if(seslimute.some(x => x.id === member.id) && member.voice.channel) member.voice.setMute(true).catch();
   let embed = new MessageEmbed().setColor(member.client.randomColor())
-  .setDescription(`
+.setTitle(`**${server.name} Hoş Geldin, Bizde Seni Bekliyorduk**`)  
+.setDescription(`
   **${client.emoji("gif1")} • Sunucuya hoş geldin ${member}, seninle \`${member.guild.memberCount}\` kişiyiz!**
   **${client.emoji("gif2")} • Ses kanalına girerek kayıt olabilirsin.**
   **${client.emoji("gif3")} • Hesabın Açılış Süresi: ${member.client.tarihHesapla(member.user.createdAt)}**

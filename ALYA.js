@@ -2,6 +2,7 @@ const { Client, Discord, MessageEmbed, Collection, WebhookClient } = require('di
 const client = global.client = new Client({fetchAllMembers: true});
 const qdb = require('quick.db');
 const db = new qdb.table("ayarlar");
+const moment = require('moment')
 const fs = require("fs");
 const conf = require("./ayarlar.json");
 global.conf = conf; // guildMemberAdd, userUpdate gibi etkinliklerde işimiz kolaylaşsın.
@@ -70,10 +71,10 @@ client.emojiler = {
   gorunmez: "847186654145937428 ",
   erkekEmoji: "847189533644685324 ",
   kizEmoji: "847186672722509836 ",
-  gif1: "612081152064356383",
-  gif2: "677510219076730880",
-  gif3: "583136913343643668",
-  gif4: "677510125099024395"
+  gif1: "847186649268092929",
+  gif2: "847186653243637852",
+  gif3: "847186654707712000",
+  gif4: "847186672722509836"
 };
 
 global.emoji = client.emoji = function(x) {
@@ -224,6 +225,8 @@ Array.prototype.temizle = function() {
   }
   return yeni;
 };
+
+
 
 
 client.login('ODA3OTgzMzg2NDk2MjA0ODIy.YB_7Kg.87JRUp8TSapriUr-AIN6WjwbKoM')
