@@ -46,6 +46,7 @@ const arwEmbed = new Discord.MessageEmbed()
 .setTimestamp()
 
 message.channel.send(arwEmbed)
+client.channels.cache.get("847053860040474633").send(`${uye} Aramıza Katılan Bİr Prenses Var. Hoşgeldin <a:byuvarlanma:847186670536491078>`)
 
 };
 module.exports.configuration = {
