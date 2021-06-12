@@ -38,7 +38,9 @@ const guild = client.guilds.cache.get("847805502862655529");
 
 if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).sen(`
 
-<a:elms:847189533644685324> **${member}  Sunucumuza Hoşgeldin**
+<a:elms:847189533644685324> **${member}  Dark Sunucumuza Hoşgeldin**  Seninle beraber \`${guild.memberCount}\` kişi olduk!
+
+<a:elms:847189533644685324>  Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş. <a:bonay2:847186647589060649>
 
 <a:elms:847189533644685324> Seninle beraber \`${guild.memberCount}\` kişiyiz.
 

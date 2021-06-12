@@ -227,46 +227,6 @@ Array.prototype.temizle = function() {
 };
 
 
-client.on("guildMemberAdd", async member => {
-  let member2 = member.user;
-  let zaman = new Date().getTime() - member2.createdAt.getTime();  
-  var user = member2;
-  var cfxzaman = [];
-  if (zaman < 604800000) {
-    cfxzaman = "Şüpheli Bir Kullanıcı!";
-  } else {
-    cfxzaman = "Güvenli Bir Kullanıcı";
-  }
-  require("moment-duration-format");
-  let zaman1 = new Date().getTime() - user.createdAt.getTime();
-  const gecen = moment
-    .duration(zaman1)
-    .format(`DD **[Gün,]** HH **[Saat,]** mm **[Dakika,]** ss **[Saniye]**`);
-  let dbayarfalanfilan = await db.fetch(`cfxdbayar${member.guild.id}`);
-  let message = member.guild.channels.find(x => x.id === dbayarfalanfilan);
-  const bergy = new Discord.RichEmbed() 
-    .setColor("RANDOM")
-      var üyesayısı = message.guild.members.size.toString().replace(/ /g, "     ");
-    var üs = üyesayısı.match(/([0-9])/g);
-    üyesayısı = üyesayısı.replace(/([a-zA-Z])/g, "bilinmiyor").toLowerCase(); 
-    if (üs) {
-      üyesayısı = üyesayısı.replace(/([0-9])/g, d => {
-        return {
-          "1": "<a:bsayi0:853330418854395954>",
-          "2": "<a:bsayi2:853330422545252382>",
-          "3": " <a:bsayi3:853330420330791004>",
-          "4": "<a:bsayi4:853330418069930014>",
-          "5": " <a:bsayi5:853330419847528458>",
-          "6": "<a:bsayi6:853330421806661642>",
-          "7": "<a:bsayi7:853330425564889138>",
-          "8": " <a:bsayi8:853330426219200512>",
-          "9": " <a:bsayi9:853330423467868211>",
-          "0": "<a:bsayi0:853330418854395954>"
-        }[d];
-      });
-    }
-     message.send(
-     `${client.emojis.get("<a:elmas:853334774965207050>")} **Hoşgeldin ${member} Seninle Beraber  ${üyesayısı.toString()} Kişiyiz!** \n \n ${client.emojis.get("EMOJİ ID")} **Kaydının Yapılması İçin** "REGİSTAR ODASININ FULL ADI" **Odalardan Birine Girmelisin! ** <@&BAKICAK ROL ID> **Rolündeki Arkadaşlar Seninle İlgilenicektir!**`)
-}) 
+
 
 client.login("ODUzMzIyNDgxMjE3NTY4Nzg4.YMTsfQ.28F1kFQuiLAjkdgvFH_ZMqqnDZ8")
