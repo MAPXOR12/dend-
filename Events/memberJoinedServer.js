@@ -38,14 +38,14 @@ const guild = client.guilds.cache.get("847805502862655529");
 
 if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).send(`
 
-<a:elmas:853334774965207050> **${member}  Dark Sunucumuza Hoşgeldin**  Seninle beraber \`${guild.memberCount}\` kişi olduk!
+<a:bmavibit:853330412361351238> **${member}  Dark Sunucumuza Hoşgeldin**  Seninle beraber \`${guild.memberCount}\` kişi olduk!
 
-<a:elmas:853334774965207050>  Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş. <a:bonay2:853330411525373982>
+<a:bmavibit:853330412361351238>  Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş. <a:bonay2:853330411525373982>
 
-<a:elmas:853334774965207050> Sunucumuzun <#847805504444563504> kanalını okumayı unutma! Kuralları okumuş olarak cezai işlem uygulanacaktır!
+<a:bmavibit:853330412361351238> Sunucumuzun <#847805504444563504> kanalını okumayı unutma! Kuralları okumuş olarak cezai işlem uygulanacaktır!
 
 
-<a:elmas:853334774965207050> Kayıt için **Dark Registery** Odalarına geçebilirsiniz <@&852972599692755004> Sizinle İlgilenicektir.
+<a:bmavibit:853330412361351238> Kayıt için **Dark Registery** Odalarına geçebilirsiniz <@&852972599692755004> Sizinle İlgilenicektir.
 
 `)
 
