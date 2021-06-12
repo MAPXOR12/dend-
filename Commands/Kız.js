@@ -30,23 +30,23 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
 
 const arwEmbed = new Discord.MessageEmbed()
 .setColor("RANDOM")
-.setDescription(`**Kayıt Başarılı <a:bonay2:847186647589060649>**
+.setDescription(`**Kayıt Başarılı <a:bonay2:853330411525373982>**
 
-<a:elms:847189533644685324> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
+<a:elmas:853334774965207050> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
  
-<a:elms:847189533644685324> **Kullanıcının Cinsiyeti :** : \`Kadın\`
+<a:elmas:853334774965207050> **Kullanıcının Cinsiyeti :** : \`Kadın\`
 
-<a:elms:847189533644685324> **Verilen Roller:** <@&847053859629301765>
+<a:elmas:853334774965207050> **Verilen Roller:** <@&852972634040303646>
 
-<a:elms:847189533644685324> **Yetkili :** ${message.author}`)
+<a:elmas:853334774965207050> **Yetkili :** ${message.author}`)
 
 .setFooter('Lzoyn Was Here')
 .setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true}))
-.setImage("https://media.discordapp.net/attachments/608711473652563968/834012334309376030/image0.gif")    
+.setImage('https://cdn.discordapp.com/attachments/852972589182091315/853337841321246740/1.gif')
 .setTimestamp()
 
 message.channel.send(arwEmbed)
-client.channels.cache.get("847053860040474633").send(`${uye} Aramıza Katılan Bİr Prenses Var. Hoşgeldin <a:byuvarlanma:847186670536491078>`)
+client.channels.cache.get("852972605409853500").send(`${uye} **Aramıza katılan bir prenses var. Hoşgeldin** <a:yanaktan_makas:853201180334620675>`)
 
 };
 module.exports.configuration = {

@@ -38,18 +38,18 @@ const arwEmbed = new Discord.MessageEmbed()
  
 <a:elmas:853334774965207050> **Kullanıcının Cinsiyeti :** : \`Erkek\`
 
-<a:elmas:853334774965207050> **Verilen Roller:**  <@&847053859629301764>
+<a:elmas:853334774965207050> **Verilen Roller:**  <@&852972635347484692>
 
 <a:elmas:853334774965207050> **Yetkili :** ${message.author}`)
 
 .setFooter('Lzoyn Was Here')
 .setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true}))
-.setImage("https://media.discordapp.net/attachments/608711485849337856/846657241984663572/a_4773a01940005ed3b45a0ed6ff6c9540.gif")    
+.setImage('https://cdn.discordapp.com/attachments/852972589182091315/853337841321246740/1.gif')
 .setTimestamp()
 
 message.channel.send(arwEmbed)
 
-client.channels.cache.get("852972605409853500").send(`${uye} Aramıza Katılan Bİr Yakışıklı Var. Hoşgeldin <a:byuvarlanma:847186670536491078>`)
+client.channels.cache.get("852972605409853500").send(`${uye} **Aramıza katılan bir yakışıklı Var. Hoşgeldin** <a:yanaktan_makas:853201180334620675>`)
 
 
 
