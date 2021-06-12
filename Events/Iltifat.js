@@ -40,7 +40,7 @@ let iltifatlar = [
 module.exports = (message) => {
   if (db.get("ayar.chatKanali") && message.channel.id === db.get("ayar.chatKanali") && !message.author.bot) {
     iltifatSayi++;
-    if (iltifatSayi >= 100) {
+    if (iltifatSayi >= 200) {
       iltifatSayi = 0;
       message.reply(iltifatlar.random());
     };
