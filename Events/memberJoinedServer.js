@@ -36,19 +36,16 @@ const guild = client.guilds.cache.get("847805502862655529");
   if(seslimute.some(x => x.id === member.id) && member.voice.channel) member.voice.setMute(true).catch();
   
 
-if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).sen(`
+if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).send(`
 
-<a:elms:847189533644685324> **${member}  Dark Sunucumuza Hoşgeldin**  Seninle beraber \`${guild.memberCount}\` kişi olduk!
+<a:elmas:853334774965207050> **${member}  Dark Sunucumuza Hoşgeldin**  Seninle beraber \`${guild.memberCount}\` kişi olduk!
 
-<a:elms:847189533644685324>  Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş. <a:bonay2:847186647589060649>
+<a:elmas:853334774965207050>  Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş. <a:bonay2:853330411525373982>
 
-<a:elms:847189533644685324> Seninle beraber \`${guild.memberCount}\` kişiyiz.
+<a:elmas:853334774965207050> Sunucumuzun <#847805504444563504> kanalını okumayı unutma! Kuralları okumuş olarak cezai işlem uygulanacaktır!
 
-<a:elms:847189533644685324>  Kayıt Olmak İçin #rules Kanalına Göz Attıktan Sonra \`Marıen Registery\` Kanalına Girebilirsin.
 
-<a:elms:847189533644685324>  Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş. <a:bonay2:847186647589060649>
-
-<a:balev:847186649268092929> **<@&847053859645030440>**
+<a:elmas:853334774965207050> Kayıt için **Dark Registery** Odalarına geçebilirsiniz <@&852972599692755004> Sizinle İlgilenicektir.
 
 `)
 
