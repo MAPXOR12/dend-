@@ -4,7 +4,7 @@ const ayar = db.get('ayar') || {};
 const client = global.client;
 module.exports = () => {
   console.log("Bot aktif!");
-  client.user.setActivity("Lzoyn ❤️ Asphodel");
+  client.user.setActivity("This is Dark");
   if (ayar.botSesKanali && client.channels.cache.has(ayar.botSesKanali)) client.channels.cache.get(ayar.botSesKanali).join().catch();
 }
 module.exports.configuration = {
