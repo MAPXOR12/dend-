@@ -6,8 +6,8 @@ const db = new qdb.table("ayarlar");
 const client = global.client;
 
 client.komutlar = [
-  {isim: "vip", rol: "590673911167975437"},
-  {isim: "elite", rol: "604116530166235166"},
+  {isim: "vip", rol: "852972697687556146"},
+  {isim: "elite", rol: "852972629098889289"},
   {isim: "important", rol: "582928589964705792"},
   {isim: "rapper", rol: "615947945485008945"},
   {isim: "beatboxer", rol: "701780622326366309"},
@@ -30,8 +30,8 @@ client.komutlar = [
   {isim: "uyarı2", rol: "611937759745146908"},
   {isim: "uyarı3", rol: "611937764820385812"},
   {isim: "streamer", rol: "696703917664370849"},
-  {isim: "yetkilial1", rol: "589975289249923083"},
-  {isim: "yetkilial2", rol: "592791364370956308"},
+  {isim: "yetkilial1", rol: "852972607997345832"},
+  {isim: "yetkilial2", rol: "852972599000563762"},
   {isim: "yetkilial3", rol: "589975277610860555"},
   {isim: "teyitver", rol: "589975277610860555"},
 ];
