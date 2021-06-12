@@ -32,15 +32,15 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
 
 const arwEmbed = new Discord.MessageEmbed()
 .setColor("RANDOM")
-.setDescription(`**Kayıt Başarılı <a:bonay2:847186647589060649>**
+.setDescription(`**Kayıt Başarılı <a:bonay2:853330411525373982>**
 
-<a:elms:847189533644685324> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
+<a:elmas:853334774965207050> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
  
-<a:elms:847189533644685324> **Kullanıcının Cinsiyeti :** : \`Erkek\`
+<a:elmas:853334774965207050> **Kullanıcının Cinsiyeti :** : \`Erkek\`
 
-<a:elms:847189533644685324> **Verilen Roller:**  <@&847053859629301764>
+<a:elmas:853334774965207050> **Verilen Roller:**  <@&847053859629301764>
 
-<a:elms:847189533644685324> **Yetkili :** ${message.author}`)
+<a:elmas:853334774965207050> **Yetkili :** ${message.author}`)
 
 .setFooter('Lzoyn Was Here')
 .setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true}))
@@ -49,7 +49,7 @@ const arwEmbed = new Discord.MessageEmbed()
 
 message.channel.send(arwEmbed)
 
-client.channels.cache.get("847053860040474633").send(`${uye} Aramıza Katılan Bİr Yakışıklı Var. Hoşgeldin <a:byuvarlanma:847186670536491078>`)
+client.channels.cache.get("852972605409853500").send(`${uye} Aramıza Katılan Bİr Yakışıklı Var. Hoşgeldin <a:byuvarlanma:847186670536491078>`)
 
 
 
