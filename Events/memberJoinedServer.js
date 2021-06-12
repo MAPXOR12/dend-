@@ -16,7 +16,7 @@ module.exports = async (member) => {
   let seslimute = jdb.get("tempsmute") || [{id: null}];
 const moment = require('moment')
   let yasakTaglilar = jdb.get("yasakTaglilar") || [];
-const guild = client.guilds.cache.get("847053859590504478");
+const guild = client.guilds.cache.get("847805502862655529");
     
 
 
@@ -36,7 +36,7 @@ const guild = client.guilds.cache.get("847053859590504478");
   if(seslimute.some(x => x.id === member.id) && member.voice.channel) member.voice.setMute(true).catch();
   
 
-if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).send(`
+if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).sen(`
 
 <a:elms:847189533644685324> **${member}  Sunucumuza Hoşgeldin**
 
