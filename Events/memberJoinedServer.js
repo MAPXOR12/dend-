@@ -38,14 +38,15 @@ const guild = client.guilds.cache.get("847805502862655529");
 
 if(ayarlar.teyitKanali && member.guild.channels.cache.has(ayarlar.teyitKanali)) member.guild.channels.cache.get(ayarlar.teyitKanali).send(`
 
-<a:bmavibit:853330412361351238> **${member}  Dark Sunucumuza Hoşgeldin**  Seninle beraber \`${guild.memberCount}\` kişi olduk!
+<a:resurection_elmas:853410236873048114> **${member}  Dark Sunucumuza Hoşgeldin**  Seninle beraber \`${guild.memberCount}\` kişi olduk!
 
-<a:bmavibit:853330412361351238>  Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş. <a:bonay2:853330411525373982>
-
-<a:bmavibit:853330412361351238> Sunucumuzun <#847805504444563504> kanalını okumayı unutma! Kuralları okumuş olarak cezai işlem uygulanacaktır!
+<a:resurection_elmas:853410236873048114>  Hesabın \`${moment(member.user.createdTimestamp).format("LLL")}\` tarihinde oluşturulmuş. <a:resurection_batik:853360740660019230>
 
 
-<a:bmavibit:853330412361351238> Kayıt için **Dark Registery** Odalarına geçebilirsiniz <@&852972599692755004> Sizinle İlgilenicektir.
+<a:resurection_elmas:853410236873048114> Sunucumuzun <#847805504444563504> kanalını okumayı unutma! Kuralları okumuş olarak cezai işlem uygulanacaktır!
+
+
+<a:resurection_elmas:853410236873048114> Kayıt için **V.Confirmed** Odalarına geçebilirsiniz <@&852972599692755004> Sizinle İlgilenicektir.
 
 `)
 

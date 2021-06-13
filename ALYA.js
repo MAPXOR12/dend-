@@ -63,8 +63,8 @@ client.emojiSayi = function(sayi) {
 };
 
 client.emojiler = {
-  onay: "847186647589060649 ",
-  iptal: "847186648554537060 ",
+  onay: "853555570094768168   ",
+  iptal: "853555926467346432 ",
   cevrimici: "847186652890923008 ",
   rahatsizetmeyin: "847186649686212639 ",
   bosta: "847186646658973766 ",
