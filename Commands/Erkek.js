@@ -32,15 +32,15 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
 
 const arwEmbed = new Discord.MessageEmbed()
 .setColor("RANDOM")
-.setDescription(`**Kayıt Başarılı <a:bonay2:853330411525373982>**
+.setDescription(`**Kayıt Başarılı <a:resurection_tik:853360771638493194>**
 
-<a:elmas:853334774965207050> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
+<a:resurection_elmas:853410236873048114> **Kullanıcının İsmi :**  \`${yazilacakIsim} \` 
  
-<a:elmas:853334774965207050> **Kullanıcının Cinsiyeti :** : \`Erkek\`
+<a:resurection_elmas:853410236873048114> **Kullanıcının Cinsiyeti :** : \`Erkek\`
 
-<a:elmas:853334774965207050> **Verilen Roller:**  <@&852972635347484692>
+<a:resurection_elmas:853410236873048114> **Verilen Roller:**  <@&852972635347484692>
 
-<a:elmas:853334774965207050> **Yetkili :** ${message.author}`)
+<a:resurection_elmas:853410236873048114> **Yetkili :** ${message.author}`)
 
 .setFooter('Lzoyn Was Here')
 .setAuthor(message.member.displayName, message.author.avatarURL({dynamic: true}))
@@ -49,7 +49,8 @@ const arwEmbed = new Discord.MessageEmbed()
 
 message.channel.send(arwEmbed)
 
-client.channels.cache.get("852972605409853500").send(`${uye} **Aramıza katılan bir yakışıklı Var. Hoşgeldin** <a:yanaktan_makas:853201180334620675>`)
+client.channels.cache.get("852972605409853500").send(`${uye} **Aramıza katılan bir yakışıklı Var. Hoşgeldin** <a:resurection_yanansonenkalp:853373184534904843>
+`)
 
 
 
