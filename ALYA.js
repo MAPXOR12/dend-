@@ -226,7 +226,13 @@ Array.prototype.temizle = function() {
   return yeni;
 };
 
-
+client.on("message", message => {
+if(message.author.bot) return;
+let taglar = ["tag", ".tag", "!tag", "-tag", "TAG", "Tag"]
+    if (taglar.some(t => message.content.toLowerCase() === t)) {
+            message.channel.send(`\`⌭, #0808\``)
+  }
+})
 
 
 client.login("ODUzMzIyNDgxMjE3NTY4Nzg4.YMTsfQ.28F1kFQuiLAjkdgvFH_ZMqqnDZ8")

@@ -11,7 +11,7 @@ module.exports = (oldUser, newUser) => {
   if(!guild) return console.error(`${__filename} Sunucu bulunamadı!`);
   let user = guild.members.cache.get(oldUser.id);
   if(!user) return;
-  const embed = new discord.MessageEmbed().setAuthor(user.displayName, user.user.avatarURL({dynamic: true})).setFooter("YASHINU ❤️ ALOSHA").setColor(client.randomColor()).setTimestamp();
+  const embed = new discord.MessageEmbed().setAuthor(user.displayName, user.user.avatarURL({dynamic: true})).setFooter("Lzoyn ❤️").setColor(client.randomColor()).setTimestamp();
   let log = client.channels.cache.get(ayarlar.ekipLogKanali);
   let yasakTaglilar = db.get('yasakTaglilar') || [];
 
