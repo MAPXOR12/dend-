@@ -230,7 +230,7 @@ client.on("message", message => {
 if(message.author.bot) return;
 let taglar = ["tag", ".tag", "!tag", "-tag", "TAG", "Tag"]
     if (taglar.some(t => message.content.toLowerCase() === t)) {
-            message.channel.send(`\`⌭, #0808\``)
+            message.channel.send(`**Sunucu Tagı** : ⌭ \n**Ekip Tagı** : #0808`)
   }
 })
 
